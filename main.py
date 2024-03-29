@@ -29,7 +29,7 @@ def scan():
                  print(f'port {port} is Open')
              except: 
                     pass
-                    q.task_done()
+             q.task_done()
 
 for i in range(1001):
     t = threading.Thread(target= scan, daemon=False)
